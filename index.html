@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Tip Calculator App</title>
+
+    <link rel="preload" href="app/app.css" as="style">
+    <link rel="stylesheet" href="app/app.css">
+
+    <link rel="preload" href="app/normalize.css" as="style">
+    <link rel="stylesheet" href="app/normalize.css">
+</head>
+<body>
+    
+    <main class="main">
+        <section class="contenedor">
+            <h1 class="titulo">Spli</h1>
+            <h1 class="titulo">Tter</h1>
+            <div class="calculator">
+                <form class="form" id="agregar-datos" action="#">
+                    
+                    <div class="principal" id="ingresa-datos">
+                        <div class="bill">
+                            <label class="legend" for="bill">Bill</label>
+                        </div>
+                        <div class="bill-icon">
+                            <input type="text" id="bill" placeholder="0">
+                        </div>
+
+                        <div class="porcent">
+                            <label for="tip-porcent">Select Tip %</label>
+                        </div>
+                        <div id="porcent">
+                            <button type="button" value="5"/>5%</button>
+                            <button type="button" value="10"/>10%</button>
+                            <button type="button" value="15"/>15%</button>
+                            <button type="button" value="25"/>25%</button>
+                            <button type="button" value="50"/>50%</button>
+                            <input type="text" id="tip-porcent" placeholder="Custom">
+                        </div>
+
+                        <div class="number-people">
+                            <label for="number-people">Number of People</label>
+                        </div>
+                        <div class="person-icon">
+                            <input type="text" id="number-people" placeholder="0">
+                        </div>
+                    </div>
+
+                    <div class="secundario" id="mostrar-datos">
+                        <div class="result">
+                            <div class="amount" id="amount">
+                                <h2 class="style1">Tip amount</h2>
+                                <h3 class="style2">/ person</h3>
+                                <span>$0.00</span>
+                            </div>
+                            <div class="total" id="total">
+                                <h2 class="style1">Total</h2>
+                                <h3 class="style2">/ person</h3>
+                                <span>$0.00</span>
+                            </div>
+                        </div>
+
+                        <input type="reset" id="reset" class="cursor-not-allowed opacity-50"  value="Reset"/>
+                    </div>
+  
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="app/app.js"></script>
+</body>
+</html>
